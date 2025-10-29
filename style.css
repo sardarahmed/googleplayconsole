@@ -21,10 +21,8 @@ header {
     z-index: 1000;
 }
 
-.logo {
-    font-size: 1.8em;
-    font-weight: 700;
-    color: #007bff;
+.logo img {
+    height: 40px;
 }
 
 nav a {
