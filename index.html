@@ -1,121 +1,96 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width,initial-scale=1" />
-		<title>Google Play Console — Demo</title>
-		<meta name="description" content="Simple demo page for Google Play Console style app listing." />
-		<style>
-			:root{--bg:#0f1724;--card:#111827;--muted:#9ca3af;--accent:#3b82f6;--glass:rgba(255,255,255,0.04)}
-			*{box-sizing:border-box}
-			html,body{height:100%;margin:0;font-family:Inter,Segoe UI,Roboto,system-ui,-apple-system,"Helvetica Neue",Arial}
-			body{background:linear-gradient(180deg,#071028 0%, #071026 60%);color:#e6eef8;line-height:1.45;-webkit-font-smoothing:antialiased;padding:24px}
-			.container{max-width:980px;margin:0 auto}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Play Console Accounts</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            background: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Google Play Console Accounts</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#accounts">Account Types</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-			header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
-			.brand{display:flex;align-items:center;gap:12px}
-			.logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,#34d399,#60a5fa);display:flex;align-items:center;justify-content:center;font-weight:700;color:#07203a}
-			h1{font-size:1.25rem;margin:0}
-			p.lead{color:var(--muted);margin:4px 0 0;font-size:.95rem}
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to our Google Play Console account selling service. We provide verified Google Play Console accounts for developers.</p>
+            <h3>Who We Are</h3>
+            <p>We are a team of experts dedicated to helping developers get their apps on the Google Play Store. We provide reliable and secure Google Play Console accounts.</p>
+        </section>
 
-			.hero{background:var(--glass);Padding:18px;border-radius:12px;display:flex;gap:18px;align-items:center}
-			.hero .info{flex:1}
-			.hero h2{margin:0 0 6px;font-size:1.1rem}
-			.cta{display:inline-block;background:var(--accent);color:#04223d;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:600}
+        <section id="accounts">
+            <h2>Account Types</h2>
+            <ul>
+                <li>New verified Google Play Console account</li>
+                <li>Old verified Google Play Console account with app</li>
+                <li>Old verified Google Play Console account without app</li>
+                <li>New organizational Google Play Console account with and without apps</li>
+            </ul>
+        </section>
 
-			.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:18px}
-			.card{background:var(--card);padding:14px;border-radius:10px}
-			.card h3{margin:0 0 8px;font-size:.98rem}
-			.muted{color:var(--muted);font-size:.92rem}
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>You can reach us through the following channels:</p>
+            <ul>
+                <li>Telegram: <a href="https://t.me/shan7557">https://t.me/shan7557</a></li>
+                <li>WhatsApp: +923490637557</li>
+                <li>Email: sanineurope@gmail.com</li>
+            </ul>
+        </section>
+    </main>
 
-			footer{margin-top:28px;color:var(--muted);font-size:.9rem}
-
-			/* small touch: theme toggle */
-			.controls{display:flex;gap:8px;align-items:center}
-			.btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 10px;border-radius:8px;color:inherit;cursor:pointer}
-
-			@media (max-width:520px){body{padding:16px}.hero{flex-direction:column;align-items:flex-start}}
-		</style>
-	</head>
-	<body>
-		<div class="container">
-			<header>
-				<div class="brand">
-					<div class="logo">GP</div>
-					<div>
-						<h1>Google Play Console — Demo</h1>
-						<p class="lead">A small single-file demo page for an app listing / console overview.</p>
-					</div>
-				</div>
-				<div class="controls" aria-hidden="false">
-					<button id="themeBtn" class="btn" title="Toggle theme">Toggle theme</button>
-				</div>
-			</header>
-
-			<main>
-				<section class="hero" role="region" aria-label="App summary">
-					<div class="info">
-						<h2>My App — Production</h2>
-						<p class="muted">Published: 2025 • Rating: 4.7 • Installs: 1M+</p>
-						<p class="muted">Manage releases, monitor crashes, and view analytics from the console.</p>
-					</div>
-					<div>
-						<a class="cta" href="#">Open Console</a>
-					</div>
-				</section>
-
-				<section class="features" aria-label="features">
-					<article class="card">
-						<h3>Releases</h3>
-						<p class="muted">Create, track, and promote release tracks (internal, alpha, beta, production).</p>
-					</article>
-					<article class="card">
-						<h3>Analytics</h3>
-						<p class="muted">Basic acquisition and quality metrics to help you improve your app.</p>
-					</article>
-					<article class="card">
-						<h3>Crashes</h3>
-						<p class="muted">View crash trends and stack traces to identify regressions quickly.</p>
-					</article>
-					<article class="card">
-						<h3>Store Listing</h3>
-						<p class="muted">Edit store listing, screenshots, and localized descriptions.</p>
-					</article>
-				</section>
-			</main>
-
-			<footer>
-				<p>Demo page — built for a quick preview. Recommended next steps: add real assets, manifest, and deploy to GitHub Pages or a static host.</p>
-			</footer>
-		</div>
-
-		<script>
-			(function(){
-				const btn = document.getElementById('themeBtn');
-				btn.addEventListener('click', ()=>{
-					const root = document.documentElement;
-					if(root.style.getPropertyValue('--bg') === '#0f1724'){
-						// light
-						root.style.setProperty('--bg','#f7fafc');
-						root.style.setProperty('--card','#ffffff');
-						root.style.setProperty('--muted','#475569');
-						root.style.setProperty('--accent','#2563eb');
-						root.style.setProperty('--glass','rgba(0,0,0,0.03)');
-						document.body.style.color = '#071028';
-						document.body.style.background = 'linear-gradient(180deg,#f8fafc 0%, #eef2ff 60%)';
-					} else {
-						// dark
-						root.style.setProperty('--bg','#0f1724');
-						root.style.setProperty('--card','#111827');
-						root.style.setProperty('--muted','#9ca3af');
-						root.style.setProperty('--accent','#3b82f6');
-						root.style.setProperty('--glass','rgba(255,255,255,0.04)');
-						document.body.style.color = '#e6eef8';
-						document.body.style.background = 'linear-gradient(180deg,#071028 0%, #071026 60%)';
-					}
-				});
-			})();
-		</script>
-	</body>
+    <footer>
+        <p>&copy; 2023 Google Play Console Accounts. All rights reserved.</p>
+    </footer>
+</body>
 </html>
-
