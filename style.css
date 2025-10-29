@@ -1,0 +1,110 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #1877f2;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #1877f2;
+}
+
+.container {
+    padding: 20px;
+}
+
+.hero {
+    background-color: #1877f2;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.content-section {
+    background-color: #fff;
+    padding: 40px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content-section h2 {
+    color: #1877f2;
+    font-size: 2em;
+    margin-top: 0;
+}
+
+.account-types {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.account-card {
+    background-color: #f0f2f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 45%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.account-card h3 {
+    color: #1877f2;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.contact-info a {
+    color: #1877f2;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
