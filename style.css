@@ -21,8 +21,20 @@ header {
     z-index: 1000;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
 .logo img {
     height: 40px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #333;
 }
 
 nav a {
