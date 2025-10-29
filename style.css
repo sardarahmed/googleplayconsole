@@ -24,7 +24,7 @@ header {
 .logo {
     font-size: 1.8em;
     font-weight: 700;
-    color: #1877f2;
+    color: #007bff;
 }
 
 nav a {
@@ -36,7 +36,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #1877f2;
+    color: #007bff;
 }
 
 .container {
@@ -44,7 +44,7 @@ nav a:hover {
 }
 
 .hero {
-    background: linear-gradient(to right, #1877f2, #1a9cfc);
+    background: linear-gradient(to right, #007bff, #0056b3);
     color: #fff;
     padding: 80px 20px;
     text-align: center;
@@ -70,7 +70,7 @@ nav a:hover {
 }
 
 .content-section h2 {
-    color: #1877f2;
+    color: #007bff;
     font-size: 2.2em;
     margin-top: 0;
     text-align: center;
@@ -85,13 +85,13 @@ nav a:hover {
 }
 
 .account-card {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
     border-radius: 12px;
     padding: 30px;
     width: 45%;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -101,13 +101,26 @@ nav a:hover {
 }
 
 .account-card h3 {
-    color: #1877f2;
+    color: #0056b3;
     font-size: 1.5em;
+    margin-top: 0;
 }
 
 .account-card p {
     font-size: 1.1em;
 }
+
+.account-card ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.account-card ul li {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%23007bff" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>') no-repeat left center;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
 
 .contact-info {
     list-style: none;
@@ -121,7 +134,7 @@ nav a:hover {
 }
 
 .contact-info a {
-    color: #1877f2;
+    color: #007bff;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
